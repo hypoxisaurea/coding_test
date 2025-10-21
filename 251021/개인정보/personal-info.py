@@ -5,7 +5,7 @@ class Person:
         self.weight = weight
 
     def __str__(self):
-        return f"{self.name} {self.height} {self.weight}"
+        return f"{self.name} {self.height} {self.weight:.1f}"
 
 n = 5
 people = []
