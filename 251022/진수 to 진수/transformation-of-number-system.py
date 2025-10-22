@@ -8,7 +8,7 @@ for i in range(length):
 
 digits = []
 while True:
-    if number < 2:
+    if number < b:
         digits.append(number)
         break
     
