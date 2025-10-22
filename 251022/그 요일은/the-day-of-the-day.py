@@ -23,7 +23,7 @@ if diff < 0:
 today = diff % 7
 
 count = 0
-for i in range(diff):
+for i in range(diff + 1):
     if A == day_of_week[(today + i) % 7]:
         count += 1
 
