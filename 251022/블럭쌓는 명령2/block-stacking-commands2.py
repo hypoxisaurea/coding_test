@@ -5,10 +5,8 @@ arr = [
     0 for _ in range(n)
 ]
 
-for i in range(k):
-    a, b = commands[i][0], commands[i][1]
-    
-    for j in range(a, b+1):
-        arr[j] += 1
+for a, b in commands:
+    for i in range(a, b + 1):
+        arr[i] += 1
 
 print(max(arr))
