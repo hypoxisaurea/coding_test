@@ -9,6 +9,8 @@ while True:
     digits.append(N % B)
     N //= B
 
+if digits[-1] == 0:
+    digits.pop(-1)
 
 for digit in digits[::-1]:
     print(digit, end='')
