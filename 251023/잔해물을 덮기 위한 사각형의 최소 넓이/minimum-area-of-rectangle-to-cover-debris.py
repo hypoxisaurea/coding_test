@@ -42,4 +42,7 @@ for x in range(MAX_K):
             if min_y > y:
                 min_y = y
 
-print((max_x - min_x + 1) * (max_y - min_y + 1))
+if min_x == MAX_K:
+    print(0)
+else:
+    print(((max_x - min_x) + 1) * ((max_y - min_y) + 1))
