@@ -5,14 +5,13 @@ count = 0
 answer = 0
 
 for i in range(n):
-    if arr[i] > t:
-        if i > 0:
-            count += 1
-        else:
-            count = 1
-    else:
+    if i > 0 and arr[i] > t:
+        count += 1
+    elif i == 0 and arr[i] > t:
         count = 1
-        
-    answer = max(answer, count)
+    else:
+        count = 0
 
-print(count)
+    answer = max(count, answer)
+
+print(answer)
